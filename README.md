@@ -17,7 +17,7 @@ Note que, além de iniciar o serviço, configurei também para ser executado aut
 
 sudo systemctl status nginx
 
-Após a instalação e configuração do nginx, criei um script em bash para monitorar o statu de serviço Nginx. O script deve verificar a situação do servidor Ngix e retornar a saída dele em um arquivo. Nesse repositório você terá acesso ao script, chamado checker_nginx.sh, que está em uma pasta nomeada "scripts".
+Após a instalação e configuração do nginx, criei um script em bash para monitorar o statu de serviço Nginx. O script deve verificar a situação do servidor Ngix e retornar a saída dele em um arquivo. Nesse repositório você terá acesso ao script, chamado stts_nginx.sh, que está em uma pasta nomeada "scripts".
 
 Uma rápida explicação do Script:
 Verifica se o serviço Nginx está ativo usando o comando systemctl is-active.
