@@ -1,10 +1,11 @@
 SERVICE="nginx"
-LOG_DIR="/var/log/nginx_check"
+LOG_DIR="$HOME/nginx_check"  # Usando o diretório dentro da home do usuário
 DATE=$(date "+%Y-%m-%d %H:%M:%S")
 
+# Cria o diretório de logs dentro da home
 mkdir -p "$LOG_DIR"
 
-# Verificar status do serviço
+# Verifica o status do serviço
 if systemctl is-active --quiet $SERVICE; then
     STATUS="ONLINE"
     MESSAGE="O serviço está funcionando corretamente."
